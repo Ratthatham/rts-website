@@ -1,9 +1,10 @@
 import './App.css';
+import HomeSection from './component/home-section/home-section';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
+    <div className="app">
+      <HomeSection/>
     </div>
   );
 }
