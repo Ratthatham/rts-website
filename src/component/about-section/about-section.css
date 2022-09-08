@@ -1,0 +1,46 @@
+.about-section-container{
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    min-height: 90vh;
+    max-width: 1200px;
+    margin: auto;  
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.about-section-container h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.sub-about-section{
+    display: flex;
+    
+}
+
+.detail{
+    margin-bottom: 20px;
+}
+
+.about-section-container .about-me-text{
+    max-width: 60%;
+    margin-left: 40px;
+}
+
+.about-section-container .img-box {
+    background-color: var(--white-alpha-25);
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tool{
+    background-color: var(--white-alpha-25);
+    padding: 10px 28px;
+    border-radius: 30px;
+    margin: 10px;
+}
