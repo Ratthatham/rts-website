@@ -43,13 +43,12 @@
 .about-section-container .img-box {
     background-color: var(--white-alpha-25);
     max-width: 100%;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .borders{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .border{
@@ -59,3 +58,5 @@
     margin: 10px;
     text-align: center;
 }
+
+
