@@ -5,7 +5,7 @@ import aboutMePic from '/Users/ratthathamsiridol/Documents/Fullstack Dev/rts-por
 const AboutSection = () => {
     return(
         <div className="about-section-container">
-            <h1>About me</h1>
+            <h1>About Me</h1>
             <div className="sub-about-section">
                 <div className="about-me-image">
                     <div className="img-box">
@@ -18,27 +18,33 @@ const AboutSection = () => {
                         Three words that describe me are lifelong learning,  professional, motivation. </p>
                     </div>
                     <div className="programer-language">
-                        <h3>Programing Language</h3>
-                        <h3>Intermediate</h3>
-                        <span>HTML</span>
-                        <p>CSS</p>
-                        <p>Javascript</p>
-                        <p>Typescript</p>
-                        <h3>Beginer</h3>
-                        <p>Python</p>
-                        <p>R Programing</p>
+                        <h3>Experience Programing Language</h3>
+                        <div className="borders">
+                            <div className="border">
+                                <h3>Intermediate</h3>
+                                <div className="border">HTML</div>
+                                <div className="border">CSS</div>
+                                <div className="border">Javascript</div>
+                                <div className="border">Typescript</div>
+                            </div>
+                            <div className="border">
+                                <h3>Beginner</h3>
+                                <div className="border">Python</div>
+                                <div className="border">R Programing</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="ex-stacks-tools">
-                        <h3>Experience web stack and tools</h3>
-                        <div className="tools">
-                            <div className="tool">React</div>
-                            <div className="tool">Node js.</div>
-                            <div className="tool">NPM</div>
-                            <div className="tool">Bootstrap</div>
-                            <div className="tool">DigitalOcean</div>
-                            <div className="tool">Docker</div>
-                            <div className="tool">Firebase</div>
-                            <div className="tool">Github</div>
+                        <h3>Experience Web Stack And Tools</h3>
+                        <div className="borders">
+                            <div className="border">React</div>
+                            <div className="border">Node js.</div>
+                            <div className="border">NPM</div>
+                            <div className="border">Bootstrap</div>
+                            <div className="border">DigitalOcean</div>
+                            <div className="border">Docker</div>
+                            <div className="border">Firebase</div>
+                            <div className="border">Github</div>
                         </div>
                     </div>
                 </div>

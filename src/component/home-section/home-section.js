@@ -16,8 +16,8 @@ const HomeSection = () => {
                     <img src={profilePicture} alt="profile "/>
                 </div>
             </div>
-            <a className="btn-download-resume" href="#"> Download Resume</a>
-            <a className="btn" href="#"> Let's Talk</a>
+            <a className="btn-download-resume" href="test"> Resume</a>
+            <a className="btn" href="test"> Let's Talk</a>
         </div>
     )
 }

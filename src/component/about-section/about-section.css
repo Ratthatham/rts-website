@@ -15,10 +15,23 @@
 
 .sub-about-section{
     display: flex;
-    
 }
 
 .detail{
+    margin-bottom: 20px;
+}
+
+.detail p {
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.programer-language, .programer-language>h3{
+    margin-bottom: 20px;
+}
+
+.ex-stacks-tools, .ex-stacks-tools>h3{
     margin-bottom: 20px;
 }
 
@@ -33,14 +46,16 @@
     border-radius: 50px;
 }
 
-.tools{
+.borders{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.tool{
+.border{
     background-color: var(--white-alpha-25);
     padding: 10px 28px;
     border-radius: 30px;
     margin: 10px;
+    text-align: center;
 }
