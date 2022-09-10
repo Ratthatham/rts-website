@@ -1,7 +1,9 @@
 import React from "react";
 import './about-section.css'
+import Education from "./education/education";
 import ExStackTools from "./ex-stacks-tools/ex-stacks-tools";
 import ProgramerLanguage from "./programer-language/programer-language";
+import WorkExperience from "./work-experience/work-experience";
 import aboutMePic from '/Users/ratthathamsiridol/Documents/Fullstack Dev/rts-portfolio/src/asset/AboutMePic-NoBG.png'
 
 const AboutSection = () => {
@@ -21,6 +23,12 @@ const AboutSection = () => {
                     </div>
                     <ProgramerLanguage/>
                     <ExStackTools/>
+                <div className="tab-items">
+                    <button type="button" className="tab-item">education</button>
+                    <button type="button" className="tab-item">work experience</button>
+                </div>
+                    <Education/>
+                    <WorkExperience/>
                 </div>
             </div>
         </div>

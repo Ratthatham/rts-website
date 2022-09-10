@@ -42,6 +42,7 @@
 
 .about-section-container .img-box {
     background-color: var(--white-alpha-25);
+    border: solid 1px var(--white-alpha-40);
     max-width: 100%;
     border-radius: 30px;
 }
@@ -53,10 +54,29 @@
 
 .border{
     background-color: var(--white-alpha-25);
-    padding: 10px 28px;
+    padding: 5px 15px;
     border-radius: 30px;
     margin: 10px;
     text-align: center;
+}
+
+.time-line-item{
+    margin-bottom: 30px;
+}
+
+.time-line-item:last-child{
+    margin-bottom: 0px;
+}
+
+.time-line-item .year{
+    display: block;
+    color: var(--main-color);
+}
+
+.time-line-item h4{}
+
+.time-line-item span{
+
 }
 
 
