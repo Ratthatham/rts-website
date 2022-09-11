@@ -1,7 +1,7 @@
 .about-section-container{
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    min-height: 90vh;
+    min-height: 1200px;
     max-width: 1200px;
     margin: auto;  
     border-radius: 30px;
@@ -62,6 +62,9 @@
 
 .time-line-item{
     margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0 0 40px;
+
 }
 
 .time-line-item:last-child{
@@ -70,12 +73,97 @@
 
 .time-line-item .year{
     display: block;
-    color: var(--main-color);
+    color: #f67289;
 }
 
-.time-line-item h4{}
+button{
+    font-family: inherit;
+    user-select: none;
+}
+
+.tab-item{
+    padding: 2px 0px;
+    margin: 10px 30px 20px 0px;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: var(--blue-dark);
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.5;
+    
+}
+
+.tab-item::before{
+    position: absolute;
+    content: '';
+    background-color: var(--main-color);
+    height: 2px;
+    width: 0%;
+    left: 0px;
+    bottom: 0px;
+    transition: width 0.3s ease;
+}
+
+.tab-item:hover::before{
+    width: 100%;
+}
+
+.tab-item.active::before{
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.tab-item.active{
+    color: var(--main-color);
+    opacity: 1;
+    cursor: auto;
+}
+
+
+
+
+/* .tab-item::before{
+    position: absolute;
+    content: '';
+    background-color: var(--main-color);
+    height: 1px;
+    width: 100%;
+} */
+
+
+
+/* .time-line-item h4{}
 
 .time-line-item span{
+
+} */
+
+.time-line{
+    position: relative;
+}
+
+.time-line::before{
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 1px;
+    top: 0px;
+    left: 5px;
+    background-color: var(--main-color);
+}
+
+.time-line .time-line-item::before {
+    content: '';
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: var(--main-color);
+    left: 0px;
+    top: 16px;
+    border-radius: 50%;
 
 }
 

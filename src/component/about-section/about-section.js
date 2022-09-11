@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './about-section.css'
 import Education from "./education/education";
 import ExStackTools from "./ex-stacks-tools/ex-stacks-tools";
@@ -7,6 +7,20 @@ import WorkExperience from "./work-experience/work-experience";
 import aboutMePic from '/Users/ratthathamsiridol/Documents/Fullstack Dev/rts-portfolio/src/asset/AboutMePic-NoBG.png'
 
 const AboutSection = () => {
+    const [stateEduBT, setStateEduBT] = useState('active'); //สร้าง state ขึ้นมาใช้กับการทำงานของ <Button>
+    const [stateWorkBT, setStateWorkBT] = useState('')
+
+    const buttonStateEdu = () => {
+        setStateEduBT('active')
+        setStateWorkBT('')
+    }
+
+    const buttonStateWorkBT = () => {
+        setStateWorkBT('active')
+        setStateEduBT('')
+    }
+    
+    
     return(
         <div className="about-section-container">
             <h1>About Me</h1>
@@ -24,11 +38,12 @@ const AboutSection = () => {
                     <ProgramerLanguage/>
                     <ExStackTools/>
                 <div className="tab-items">
-                    <button type="button" className="tab-item">education</button>
-                    <button type="button" className="tab-item">work experience</button>
+                    <button type="button" className={`tab-item ${stateEduBT}`} onClick={buttonStateEdu}>education</button>
+                    <button type="button" className={`tab-item ${stateWorkBT}`} onClick={buttonStateWorkBT}>work experience</button>
                 </div>
-                    <Education/>
-                    <WorkExperience/>
+                {
+                    stateEduBT === 'active'? <Education/> : <WorkExperience/>
+                }
                 </div>
             </div>
         </div>
