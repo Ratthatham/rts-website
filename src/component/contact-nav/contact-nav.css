@@ -1,0 +1,16 @@
+.contact-nav-container {
+    background-color: var(--white-alpha-25);
+    width: max-content;
+    padding: 10px 28px;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    gap: 0.8rem;
+
+}
+
+.contact-nav-container a{
+    background: transparent;
+    padding: 0.5rem;
+}
+

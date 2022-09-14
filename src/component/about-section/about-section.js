@@ -22,28 +22,30 @@ const AboutSection = () => {
     
     
     return(
-        <div className="about-section-container">
-            <h1>About Me</h1>
-            <div className="sub-about-section">
-                <div className="about-me-image">
-                    <div className="img-box">
-                        <img src={aboutMePic} alt='ratthatham'/>
+        <div id="about-me">
+            <div className="about-section-container">
+                <h1>About Me</h1>
+                <div className="sub-about-section">
+                    <div className="about-me-image">
+                        <div className="img-box">
+                            <img src={aboutMePic} alt='ratthatham'/>
+                        </div>
                     </div>
-                </div>
-                <div className="about-me-text">
-                    <div className="detail">
-                        <p>I'm an Engineering who really likes to coding and design. I'm 27 years old. I'm a cheerful good-natured, friendly person. Discipline and also kind of flexibility in work. Furthermore, I am interested in new experience or challenge because it makes continuous self-improve. 
-                        Three words that describe me are lifelong learning,  professional, motivation. </p>
+                    <div className="about-me-text">
+                        <div className="detail">
+                            <p>I'm an Engineering who really likes to coding and design. I'm 27 years old. I'm a cheerful good-natured, friendly person. Discipline and also kind of flexibility in work. Furthermore, I am interested in new experience or challenge because it makes continuous self-improve. 
+                            Three words that describe me are lifelong learning,  professional, motivation. </p>
+                        </div>
+                        <ProgramerLanguage/>
+                        <ExStackTools/>
+                    <div className="tab-items">
+                        <button type="button" className={`tab-item ${stateEduBT}`} onClick={buttonStateEdu}>education</button>
+                        <button type="button" className={`tab-item ${stateWorkBT}`} onClick={buttonStateWorkBT}>work experience</button>
                     </div>
-                    <ProgramerLanguage/>
-                    <ExStackTools/>
-                <div className="tab-items">
-                    <button type="button" className={`tab-item ${stateEduBT}`} onClick={buttonStateEdu}>education</button>
-                    <button type="button" className={`tab-item ${stateWorkBT}`} onClick={buttonStateWorkBT}>work experience</button>
-                </div>
-                {
-                    stateEduBT === 'active'? <Education/> : <WorkExperience/>
-                }
+                    {
+                        stateEduBT === 'active'? <Education/> : <WorkExperience/>
+                    }
+                    </div>
                 </div>
             </div>
         </div>

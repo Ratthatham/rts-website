@@ -1,4 +1,5 @@
 import React from "react";
+import ContactNav from "../contact-nav/contact-nav";
 import '../home-section/home-section.css'
 import profilePicture from '/Users/ratthathamsiridol/Documents/Fullstack Dev/rts-portfolio/src/asset/IMG_0263.png'
 
@@ -17,7 +18,11 @@ const HomeSection = () => {
                 </div>
             </div>
             <a className="btn-download-resume" href="test"> Resume</a>
-            <a className="btn" href="test"> Let's Talk</a>
+            <a className="btn" href="#about-me">About Me</a>
+            <div className="margin-tab"></div>
+            <div className="contact-nav">
+                <ContactNav/>
+            </div>
         </div>
     )
 }
