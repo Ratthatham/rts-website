@@ -17,7 +17,7 @@ const HomeSection = () => {
                     <img src="https://sv1.picz.in.th/images/2022/09/14/aL90fZ.png" alt="profile "/>
                 </div>
             </div>
-            <a className="btn-download-resume" href="test"> Resume</a>
+            <a className="btn-download-resume" href="https://www.canva.com/design/DAEatxnM7Kc/view" target="_blank" rel='noreferrer'> Resume</a>
             <a className="btn" href="#about-me">About Me</a>
             <div className="margin-tab"></div>
             <div className="contact-nav">
